@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top:4%;
+}
+.slideImage{
+height: 240px;
+border-radius: 4%;
+position: relative;
+}
+.stitle{
+    padding: 15px;
+    color: white;
+    background-color: rgba(39, 39, 39, 0.7);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+}
+.bgc{
+    background-color: #F1F0E8;
+}
+.slide1{
+font-family: 'Poiret One', cursive;text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 2%;
+}
+.random{
+margin-left: 5%;
+flex-wrap: wrap;
+padding-bottom: 5%;
+}
+.slide2{
+    font-family: 'Poiret One', cursive;text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding-bottom: 3%;
+    }
+.title{
+    font-weight: 700;
+    padding-top: 2% ;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+
+}
+.recipe{
+display: flex;
+/* align-items: center; */
+justify-content: center;
+width: 70%;
+margin: auto;
+margin-top: 2%;
+background-color: #eaedee;
+border-radius: 1rem;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.part{
+    width: 400px;
+}
+.marginTop{
+    padding-top: 4%;
+}
+.rcimg{
+    margin-top: 20%;
+    height: 300px;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    @media only screen and (max-width: 900px) {
+        .stitle{
+            padding: 15px;
+            color: white;
+            background-color: rgba(39, 39, 39, 0.7);
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 240px;
+        }
+        .rcimg{
+            margin-top: 20%;
+            height: 230px;
+            border-radius: 0.2rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        .recipe{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 85%;
+            /* margin: auto; */
+            margin-top: 2%;
+            background-color: #f8f8f8;
+            border-radius: 0.3rem;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+            
+            .part{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+            }
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 1200px) and (min-width: 820px)  {
+  
+    .rcimg{
+        margin: auto;
+        height: 330px;
+        width: 400px;
+        border-radius: 0.2rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    .recipe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 85%;
+        /* margin: auto; */
+        margin-top: 2%;
+        background-color: #f8f8f8;
+        border-radius: 0.3rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        
+        .part{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+        }
+        .title{
+            font-weight: 700;
+            /* padding-top: 2% ; */
+            text-align: center;
+            font-size: 30px;
+        
+        }
+    
 }
